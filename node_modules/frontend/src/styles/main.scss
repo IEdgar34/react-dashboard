@@ -1,0 +1,6 @@
+.main {
+	display: grid;
+	grid-template-columns: [sidebar-start] minmax(0, 330px) [sidebar-end content-start] 1fr;
+	grid-template-rows: [full-start] 1fr [full-end];
+	min-height: 100%;
+}

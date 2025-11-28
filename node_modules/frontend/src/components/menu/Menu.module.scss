@@ -1,0 +1,79 @@
+.menu {
+	color: black;
+	width: 100%;
+	height: auto;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	padding: 18px 20px;
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		max-width: 288px;
+		padding: 17px;
+		background-color: transparent;
+		border-radius: 14px;
+		span {
+			color: #fff;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: normal;
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			path {
+				fill: #fff;
+			}
+		}
+		&:hover {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+			max-width: 288px;
+			padding: 17px;
+			background-color: #fff;
+			border-radius: 14px;
+			span {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: normal;
+				color: #ff6767;
+			}
+			svg {
+				width: 24px;
+				height: 24px;
+				path {
+					fill: #ff6767;
+				}
+			}
+		}
+		&_active {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+			max-width: 288px;
+			padding: 17px;
+			background-color: #fff;
+			border-radius: 14px;
+			span {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: normal;
+				color: #ff6767;
+			}
+			svg {
+				width: 24px;
+				height: 24px;
+				path {
+					fill: #ff6767;
+				}
+			}
+		}
+	}
+}

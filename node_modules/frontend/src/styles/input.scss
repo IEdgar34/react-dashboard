@@ -1,0 +1,30 @@
+.input--wrapper {
+	position: relative;
+
+	
+}
+.reg_input {
+	position: absolute;
+	top: 50%;
+	left: 0.5rem;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+input[class="signup"] {
+	width: 100%;
+	height: 45px;
+	padding: 0 10px 0 70px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid black;
+	font-size: 18px;
+}
+input[class="loginin"] {
+	width: 100%;
+	height: 45px;
+	padding: 0 10px 0 70px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid black;
+	font-size: 18px;
+}

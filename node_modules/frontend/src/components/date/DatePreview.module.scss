@@ -1,0 +1,15 @@
+.date-preview {
+	&_weekday {
+		font-size: 15px;
+		font-size: 15px;
+		font-weight: 600;
+		text-transform: capitalize;
+        color: black;
+	}
+	&_date-string {
+        margin-top: 2px;
+		color: #3abeff;
+        font-size: 14px;
+        font-weight: normal;
+	}
+}

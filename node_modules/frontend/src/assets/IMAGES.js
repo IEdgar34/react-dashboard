@@ -1,0 +1,15 @@
+export const IMAGES = {
+	signUp: new URL("./images/signup-scale.jpg", import.meta.url).href,
+	name: new URL("./images/name.svg", import.meta.url).href,
+	lastname: new URL("./images/last-name.svg", import.meta.url).href,
+	username: new URL("./images/username.svg", import.meta.url).href,
+	email: new URL("./images/email.svg", import.meta.url).href,
+	password: new URL("./images/password.svg", import.meta.url).href,
+	confPassword: new URL("./images/conf-password.svg", import.meta.url).href,
+	serch: new URL("./images/serch.svg", import.meta.url).href,
+	notification: new URL("./images/notification.svg", import.meta.url).href,
+	calendar: new URL("./images/calendar.svg", import.meta.url).href,
+	loginin: new URL("./images/loginin-artguru.png", import.meta.url).href,
+	userImage: new URL("./images/user.png", import.meta.url).href,
+	logout: new URL("./images/logout.svg", import.meta.url).href,
+};

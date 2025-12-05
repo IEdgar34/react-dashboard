@@ -27,8 +27,14 @@ async function getUser(req, res) {
 		const db = await run();
 		const id = req.params.id;
 		const user = await db.findOne({ _id: new ObjectId(id) });
+		const obj = {
+			name: user.name,
+			lastName: user.lastName,
+			userName: user.userName,
+			userEmail: user.userEmail,
+		};
 		if (user) {
-			return res.status(200).json({ user: user });
+			return res.status(200).json({ user: obj });
 		}
 		return res.status(200).json({ message: "Not Found" });
 	} catch (err) {

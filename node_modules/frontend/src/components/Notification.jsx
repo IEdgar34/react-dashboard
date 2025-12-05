@@ -1,9 +1,9 @@
-import React from "react";
+import  {React, memo } from "react";
 import { IMAGES } from "../assets/IMAGES";
-export const Notification = () => {
+export const Notification = memo(() => {
 	return (
 		<div>
 			<img src={IMAGES.notification} alt="" />
 		</div>
 	);
-};
+});

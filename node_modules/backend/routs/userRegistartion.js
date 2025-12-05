@@ -41,6 +41,16 @@ async function user(req, res) {
 			userName: req.body.userName,
 			userEmail: req.body.userEmail,
 			userPassword: hash,
+			tasks: [
+				/* {	id: crypto.randomUUID(),
+					title: "title",
+					description: "description",
+					img: "arrayBuffer",
+					priority: "moderate",
+					status: "not starrted",
+					createdDate: new Date(),
+				}, */
+			],
 		};
 		const resp = await userCollection.insertOne(query);
 		const token = jwt.sign({ id: resp.insertedId }, process.env.SECRET, {

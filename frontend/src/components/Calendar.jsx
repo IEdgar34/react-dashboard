@@ -1,6 +1,6 @@
-import React from "react";
+import  {React, memo } from "react";
 import { IMAGES } from "../assets/IMAGES";
-export const Calendar = () => {
+export const Calendar = memo(() => {
 
 	return (
 		<div>
@@ -8,4 +8,4 @@ export const Calendar = () => {
 			<div></div>
 		</div>
 	);
-};
+});

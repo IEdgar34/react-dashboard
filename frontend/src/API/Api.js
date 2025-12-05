@@ -76,4 +76,29 @@ export class Api {
 			throw new Error(err);
 		}
 	}
+
+	static async getTasks(){
+		try{
+			const respons = fetch(`${this.URI}/tasks/${localStorage.getItem("userId")}`, {
+				method: 'GET'
+			})
+			return respons 
+		}catch(err){
+			throw new Error(err)
+		}
+	}
+	static async addTask(data){
+		try{
+			const respons = fetch(`${this.URI}/addtask/${localStorage.getItem("userId")}`, {
+				method: 'POST',
+				headers: {
+					'Content-type': 'application/json'
+				},
+				body: JSON.stringify(data)
+			})
+			return respons 
+		}catch(err){
+			throw new Error(err)
+		}
+	}
 }

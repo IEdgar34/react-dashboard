@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import { NavLink } from "react-router";
 import Style from "./Menu.module.scss";
-
 export const Menu = memo(() => {
+	
 	return (
 		<nav className={Style.menu}>
 			<NavLink

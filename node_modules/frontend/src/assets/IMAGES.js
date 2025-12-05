@@ -12,4 +12,8 @@ export const IMAGES = {
 	loginin: new URL("./images/loginin-artguru.png", import.meta.url).href,
 	userImage: new URL("./images/user.png", import.meta.url).href,
 	logout: new URL("./images/logout.svg", import.meta.url).href,
+	pending: new URL("./images/pending.svg", import.meta.url).href,
+	add: new URL("./images/add.svg", import.meta.url).href,
+	date: new URL("./images/date.svg", import.meta.url).href,
+	taskStatus: new URL("./images/taskStatus.svg", import.meta.url).href,
 };

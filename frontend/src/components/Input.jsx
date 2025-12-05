@@ -22,7 +22,7 @@ export const Input = memo(
 					)}
 					<input id={id} {...props} {...reactthform} />
 				</div>
-				<p className="errors">{errors ? <span>{errors?.message}</span>: ''}</p>
+				<p className="errors">{errors?.message ? <span>{errors?.message}</span>: ''}</p>
 			</div>
 		);
 	}

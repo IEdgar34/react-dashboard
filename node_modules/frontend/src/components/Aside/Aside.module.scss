@@ -1,10 +1,11 @@
 .aside {
 	grid-column: sidebar-start/ sidebar-end;
+	grid-row: full-start/full-end;
 	&__inner {
 		width: 100%;
 		min-height: 100%;
 		position: relative;
-        padding-top: 10px;
+		padding-top: 10px;
 		&::after {
 			content: "";
 			display: block;

@@ -33,10 +33,19 @@ app.get("/user/:id", (req, res) => {
 	getUser(req, res);
 });
 
-const logout = require('./routs/logout');
-app.get('/logout', (req,res) => {
-	logout(req,res);
-})
+const logout = require("./routs/logout");
+app.get("/logout", (req, res) => {
+	logout(req, res);
+});
+
+const getTasks = require("./routs/getTasks");
+app.get("/tasks/:id", (req, res) => {
+	getTasks(req, res);
+});
+const addTask = require("./routs/addTask");
+app.post("/addtask/:id", (req, res) => {
+	addTask(req, res);
+});
 app.listen(port, () => {
 	console.log(`Example app listening on port ${port}`);
 });

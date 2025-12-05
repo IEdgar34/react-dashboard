@@ -1,4 +1,4 @@
-import React from "react";
+import { React, memo } from "react";
 import Styles from "./Header.module.scss";
 import { IMAGES } from "../../assets/IMAGES";
 import { Input } from "../Input";
@@ -6,7 +6,7 @@ import { Link } from "react-router";
 import { Notification } from "../Notification";
 import { Calendar } from "../Calendar";
 import { DatePreview } from "../date/DatePreview";
-export const Header = () => {
+export const Header = memo(() => {
 	const serchInput = [
 		{
 			className: Styles["header__serch-inp"],
@@ -29,10 +29,7 @@ export const Header = () => {
 						imageClass={Styles["header__serch-icon"]}
 					/>
 					<div className={Styles["header__icons-date"]}>
-						<div
-							
-							className={Styles["header__icons-wrapper"]}
-						>
+						<div className={Styles["header__icons-wrapper"]}>
 							<Notification />
 							<Calendar />
 						</div>
@@ -42,4 +39,4 @@ export const Header = () => {
 			</div>
 		</div>
 	);
-};
+});

@@ -1,0 +1,28 @@
+.task-status {
+	width: 100%;
+	max-width: 523px;
+	align-self: start;
+	max-height: 263px;
+	padding: 24px 20px 10px 20px;
+	border-radius: 14px;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.4);
+}
+
+.task-status__title-wrapper {
+	display: flex;
+	width: max-content;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.task-status__title {
+	color: #ff6767;
+	font-size: 15px;
+	font-weight: 600;
+}
+.progress-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}

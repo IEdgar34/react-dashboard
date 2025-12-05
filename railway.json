@@ -1,7 +1,7 @@
 {
   "build": [
     "npm install",
-    "npm run build"
+    "npm run build --workspace frontend"
   ],
-  "start": "npm start"
+  "start": "npm run start"
 }
